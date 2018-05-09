@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace Esercizio3 {
-    class Program {
+    class Program {/*
         static void Main(string[] args) {
             List<int> uno = new List<int>();
             List<int> due = new List<int>();
@@ -61,6 +61,6 @@ namespace Esercizio3 {
             foreach(int q in tre){ 
                 Console.WriteLine(q);    
             }
-        }
+        }*/
     }
 }

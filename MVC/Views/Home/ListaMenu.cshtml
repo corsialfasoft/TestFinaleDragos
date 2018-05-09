@@ -1,0 +1,21 @@
+﻿@{
+    ViewBag.Title = "Menu";
+}
+<h2>@ViewBag.Title</h2>
+<h3>@ViewBag.Message</h3>
+@foreach(var menu in ViewBag.Menus) {
+<div class="row">
+    @using(Html.BeginForm("DettaglioMenu","Home",FormMethod.Post)) {
+        <div class="col-md-8">
+            @menu.Data-@menu.Pasto
+        </div>
+        <div class="col-md-2">
+            <input type="hidden" name="id" value=@menu.Id />
+        </div>
+        <div class="col-md-2">
+            <input type="submit" value="Dettaglio" />
+        </div>
+    }
+</div>
+<hr />
+}

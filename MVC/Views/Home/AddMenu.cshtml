@@ -1,0 +1,67 @@
+﻿@{
+    ViewBag.Title = "Aggiungi";
+}
+<h2>@ViewBag.Title</h2>
+<h3>@ViewBag.Message</h3>
+
+<div class="container">
+    @using(Html.BeginForm("AddMenu","Home",FormMethod.Post)) {
+        <div class="row">
+            <div class="col-md-6">
+                Data:
+            </div>
+            <div class="col-md-6">
+                <input type="date" name="_data" required />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                Pasto:
+            </div>
+            <div class="col-md-6">
+                <input type="text" name="_pasto" placeholder="pranzo/cena" required />
+            </div>
+        </div>
+        <hr />
+        <div class="row">
+            <div class="col-md-6">
+                Primo:
+            </div>
+            <div class="col-md-6">
+                <input type="text" name="_primo" placeholder="Primo" required />
+            </div>
+        </div>
+        <hr />
+        <div class="row">
+            <div class="col-md-6">
+                Secondo:
+            </div>
+            <div class="col-md-6">
+                <input type="text" name="_secondo" placeholder="Secondo" required />
+            </div>
+        </div>
+        <hr />
+        <div class="row">
+            <div class="col-md-6">
+                Contorno:
+            </div>
+            <div class="col-md-6">
+                <input type="text" name="_contorno" placeholder="Contorno" required />
+            </div>
+        </div>
+        <hr />
+        <div class="row">
+            <div class="col-md-6">
+                Dolce:
+            </div>
+            <div class="col-md-6">
+                <input type="text" name="_dolce" placeholder="Dolce" required />
+            </div>
+        </div>
+        <hr />
+        <div class="row">
+            <input type="submit" value="Aggiungi" />
+        </div>
+        <hr />
+    }
+</div>
