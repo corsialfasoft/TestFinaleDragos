@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace Esercizio2 {
-    class Program {
+    class Program {/*
         static void Main(string[] args) {
             string frase = "Cia. non so cosa scrivere. ma devo fare, ripetizioni, ripetizioni, ripetizioni, cosa scrivedere devo";
             List<string> parole = new List<string>();
@@ -37,6 +37,6 @@ namespace Esercizio2 {
             foreach(string t in pNumeri){ 
                 Console.WriteLine(t);    
             }
-        }
+        }*/
     }
 }
